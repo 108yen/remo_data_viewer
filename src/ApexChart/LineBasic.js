@@ -16,6 +16,10 @@ class LineBasic extends React.Component {
                 chart: {
                     height: 350,
                     type: 'line',
+                    toolbar: {
+                        autoSelected: 'pan',
+                        show: false
+                    },
                     zoom: {
                         enabled: false
                     }
@@ -27,8 +31,12 @@ class LineBasic extends React.Component {
                     curve: 'straight'
                 },
                 title: {
-                    text: 'Product Trends by Month',
-                    align: 'left'
+                    text: 'Temperature',
+                    align: 'center',
+                    style: {
+                        fontSize: '20px',
+                        fontWeight: 'lighter'
+                    }
                 },
                 grid: {
                     row: {
@@ -54,6 +62,3 @@ class LineBasic extends React.Component {
     }
 }
 export default LineBasic;
-
-// const domContainer = document.querySelector('#app');
-// ReactDOM.render(React.createElement(ApexChart), domContainer);

@@ -9,8 +9,8 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Brush_Chart />
-    {/* <LineBasic /> */}
+    {/* <Brush_Chart /> */}
+    <LineBasic />
     {/* <Datetime_X_Axis /> */}
   </React.StrictMode>,
   document.getElementById('root')
