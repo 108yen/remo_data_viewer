@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import LineBasic from './ApexChart/LineBasic';
-import ApexChart from './ApexChart/Datetime_X-Axis'
+import Datetime_X_Axis from './ApexChart/Datetime_X-Axis'
+import Brush_Chart from './ApexChart/Brush_Chart'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LineBasic />
-    <ApexChart />
+    <Brush_Chart />
+    {/* <LineBasic /> */}
+    {/* <Datetime_X_Axis /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
