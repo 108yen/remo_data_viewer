@@ -300,26 +300,13 @@ class Datetime_X_Axis extends React.Component {
                 annotations: {
                     yaxis: [{
                         y: 30,
-                        borderColor: '#999',
+                        borderColor: '#900',
                         label: {
                             show: true,
-                            text: 'Support',
+                            text: 'limit',
                             style: {
                                 color: "#fff",
                                 background: '#00E396'
-                            }
-                        }
-                    }],
-                    xaxis: [{
-                        x: new Date('14 Nov 2012').getTime(),
-                        borderColor: '#999',
-                        yAxisIndex: 0,
-                        label: {
-                            show: true,
-                            text: 'Rally',
-                            style: {
-                                color: "#fff",
-                                background: '#775DD0'
                             }
                         }
                     }]
