@@ -1,57 +1,46 @@
 import React from 'react';
-import { Nav, SideNav } from 'react-sidenav';
-import { Icon } from 'react-icons-kit';
-import styled from 'styled-components';
+import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 
-import { home } from 'react-icons-kit/fa/home';
-import { ic_menu } from 'react-icons-kit/md/ic_menu';
-import { toggleRight } from 'react-icons-kit/fa/toggleRight';
-
-const theme = {
-    hoverBgColor: '#f5f5f5',
-    selectionBgColor: '#f5f5f5',
-    selectionIconColor: '#03A9F4',
-};
-
-const Text = styled.div`
-  padding-left: 8px;
-`;
-
+// Be sure to include styles at some point, probably during your bootstraping
+import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 class AppNavigation extends React.Component {
-    state = { selectedPath: '' };
-
-    onItemSelection = (arg) => {
-        this.setState({ selectedPath: arg.path });
-        this.props.changePath(arg.path);
-    };
-
     render() {
         return (
             <SideNav
-                theme={theme}
-                defaultSelectedPath="home"
-                selectedPath={this.state.selectedPath}
-                onItemSelection={this.onItemSelection}
+                onSelect={(selected) => {
+                    // Add your code here
+                }}
             >
-                <Nav id={"home"}>
-                    {/* <NavIcon> */}
-                    <Icon icon={home} />
-                    {/* </NavIcon> */}
-                    <Text>Home</Text>
-                </Nav>
-                <Nav id={"menu"}>
-                    {/* <NavIcon> */}
-                    <Icon icon={ic_menu} />
-                    {/* </NavIcon> */}
-                    <Text>Menu</Text>
-                </Nav>
-                <Nav id={"toggle"}>
-                    {/* <NavIcon> */}
-                    <Icon icon={toggleRight} />
-                    {/* </NavIcon> */}
-                    <Text>ToggleRight</Text>
-                </Nav>
+                <SideNav.Toggle />
+                <SideNav.Nav defaultSelected="home">
+                    <NavItem eventKey="home">
+                        <NavIcon>
+                            <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+                        </NavIcon>
+                        <NavText>
+                            Home
+                        </NavText>
+                    </NavItem>
+                    <NavItem eventKey="charts">
+                        <NavIcon>
+                            <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
+                        </NavIcon>
+                        <NavText>
+                            Charts
+                        </NavText>
+                        <NavItem eventKey="charts/linechart">
+                            <NavText>
+                                Line Chart
+                        </NavText>
+                        </NavItem>
+                        <NavItem eventKey="charts/barchart">
+                            <NavText>
+                                Bar Chart
+                        </NavText>
+                        </NavItem>
+                    </NavItem>
+                </SideNav.Nav>
             </SideNav>
         );
     }
