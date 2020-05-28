@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import * as serviceWorker from './serviceWorker';
 import App from './App';
 import LineBasic from './ApexChart/LineBasic';
-import Datetime_X_Axis from './ApexChart/Datetime_X-Axis'
-import Brush_Chart from './ApexChart/Brush_Chart'
-import * as serviceWorker from './serviceWorker';
+import Datetime_X_Axis from './ApexChart/Datetime_X-Axis';
+import Brush_Chart from './ApexChart/Brush_Chart';
+import SideNav from './SideNav/example';
 
 ReactDOM.render(
   <React.StrictMode>
+    <SideNav />
     {/* <Brush_Chart /> */}
-    <LineBasic />
+    {/* <LineBasic /> */}
     {/* <Datetime_X_Axis /> */}
   </React.StrictMode>,
   document.getElementById('root')
