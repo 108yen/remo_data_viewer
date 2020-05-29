@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
 export const Inline = styled.div`
-    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border: solid;
 `
