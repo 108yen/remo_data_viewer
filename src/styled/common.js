@@ -5,6 +5,7 @@ export const Padding = styled.div`
   padding-right: ${(props) => props.right}px;
   padding-bottom: ${(props) => props.bottom}px;
   padding-left: ${(props) => props.left}px;
+  border: solid;
 `
 Padding.defaultProps = {
   top: 0,

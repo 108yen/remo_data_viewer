@@ -4,15 +4,12 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'font-awesome/css/font-awesome.min.css';
 import SideNav from './SideNav';
-import LineBasic from './ApexChart/LineBasic';
+import Body from './Body'
 
 ReactDOM.render(
   <React.StrictMode>
     <SideNav />
-    <LineBasic />
-    <LineBasic />
-    <LineBasic />
-    <LineBasic />
+    <Body />
   </React.StrictMode>,
   document.getElementById('root')
 );
