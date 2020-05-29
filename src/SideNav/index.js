@@ -1,7 +1,5 @@
 import React from 'react';
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
-
-// Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 class AppNavigation extends React.Component {
@@ -32,12 +30,12 @@ class AppNavigation extends React.Component {
                         <NavItem eventKey="charts/linechart">
                             <NavText>
                                 Line Chart
-                        </NavText>
+                            </NavText>
                         </NavItem>
                         <NavItem eventKey="charts/barchart">
                             <NavText>
                                 Bar Chart
-                        </NavText>
+                            </NavText>
                         </NavItem>
                     </NavItem>
                 </SideNav.Nav>

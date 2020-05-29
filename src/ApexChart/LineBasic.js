@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactApexChart from 'react-apexcharts'
-import './ApexChart.css'
+import { Chart } from '../styled/apexchart'
 
 class LineBasic extends React.Component {
     constructor(props) {
@@ -55,9 +55,9 @@ class LineBasic extends React.Component {
 
     render() {
         return (
-            <div id="chart">
+            <Chart>
                 <ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} />
-            </div>
+            </Chart>
         );
     }
 }

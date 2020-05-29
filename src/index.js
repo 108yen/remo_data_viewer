@@ -10,6 +10,9 @@ ReactDOM.render(
   <React.StrictMode>
     <SideNav />
     <LineBasic />
+    <LineBasic />
+    <LineBasic />
+    <LineBasic />
   </React.StrictMode>,
   document.getElementById('root')
 );
