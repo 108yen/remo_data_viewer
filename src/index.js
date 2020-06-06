@@ -8,7 +8,7 @@ import Body from './Body'
 
 ReactDOM.render(
   <React.StrictMode>
-    <SideNav />
+    {/* <SideNav /> */}
     <Body />
   </React.StrictMode>,
   document.getElementById('root')

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const Chart = styled.div`
     display: block;
     width: 650px;
-    margin: 10px 10px;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+    margin: 5px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
 `
 export const ChartLine = styled.div`
     position: relative;
